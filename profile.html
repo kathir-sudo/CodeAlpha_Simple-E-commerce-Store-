@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | SHOP.CO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main class="profile-page">
+    <div class="container">
+      <div class="profile-container">
+        <aside class="profile-sidebar">
+          <img src="" alt="Profile Picture" class="profile-avatar">
+          <h3 class="profile-name"></h3>
+          
+          <ul class="profile-menu">
+            <li><a href="#account" class="active">Account Details</a></li>
+            <li><a href="#orders">My Orders</a></li>
+            <li><a href="#" class="logout-btn">Logout</a></li>
+          </ul>
+        </aside>
+        
+        <section class="profile-content">
+          <div id="account" class="profile-content-section active">
+            <h2 class="profile-content-title">Account Details</h2>
+            <div class="profile-info">
+              <!-- Account info will be loaded via JavaScript -->
+            </div>
+          </div>
+          
+          <div id="orders" class="profile-content-section">
+            <h2 class="profile-content-title">My Orders</h2>
+            <div class="profile-orders">
+              <!-- Orders will be loaded via JavaScript -->
+              <div class="loading-spinner"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="js/main.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

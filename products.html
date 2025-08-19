@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Products | SHOP.CO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main class="products-page">
+    <div class="container">
+      <div class="products-header">
+        <h1 class="products-title">All Products</h1>
+        <div class="products-sort">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="">Default</option>
+            <option value="newest">Newest</option>
+            <option value="rating_desc">Rating (High to Low)</option>
+            <option value="price_asc">Price (Low to High)</option>
+            <option value="price_desc">Price (High to Low)</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="products-container">
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <div class="filter-title">Categories</div>
+            <div class="filter-content" data-filter="category">
+              <!-- Categories will be loaded via JavaScript -->
+              <p>Loading categories...</p>
+            </div>
+          </div>
+          
+          <div class="filter-group">
+            <div class="filter-title">Price Range</div>
+            <div class="filter-content active" data-filter="price">
+              <input type="range" class="price-slider" min="0" max="500" value="500">
+              <div class="price-range">Up to $500</div>
+            </div>
+          </div>
+          
+          <button class="btn clear-filters">Clear All Filters</button>
+        </aside>
+        
+        <section class="products-grid">
+          <!-- Products will be loaded via JavaScript -->
+          <div class="loading-spinner"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
