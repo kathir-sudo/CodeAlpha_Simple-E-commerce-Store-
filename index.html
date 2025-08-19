@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP.CO | Premium Fashion & Accessories</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main class="home-page">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Discover Your Perfect Style</h1>
+          <p>Premium fashion and accessories at affordable prices</p>
+          <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="featured-categories">
+      <div class="container">
+        <h2>Shop by Category</h2>
+        <div class="categories-grid">
+          <a href="products.html?category=Clothing" class="category-card">
+            <img src="uploads/images/clothing.jpg" alt="Clothing">
+            <h3>Clothing</h3>
+          </a>
+          <a href="products.html?category=Electronics" class="category-card">
+            <img src="uploads/images/electronics.jpg" alt="Electronics">
+            <h3>Electronics</h3>
+          </a>
+          <a href="products.html?category=Home" class="category-card">
+            <img src="uploads/images/home.jpg" alt="Home">
+            <h3>Home</h3>
+          </a>
+          <a href="products.html?category=Beauty" class="category-card">
+            <img src="uploads/images/beauty.jpg" alt="Beauty">
+            <h3>Beauty</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="featured-products">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="products-grid" id="featured-products">
+          <!-- Products will be loaded via JavaScript -->
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="banner">
+      <div class="container">
+        <div class="banner-content">
+          <h2>Summer Sale</h2>
+          <p>Up to 50% off selected items</p>
+          <a href="products.html" class="btn btn-outline">Shop Sale</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
